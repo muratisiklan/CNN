@@ -1,7 +1,7 @@
-from src.cnnClassifier.config.configuration import ConfigurationManager
-from src.cnnClassifier.components.prepare_callbacks import PrepareCallback
-from src.cnnClassifier.components.training import Training
-from src.cnnClassifier.logging import logger
+from cnnClassifier.config.configuration import ConfigurationManager
+from cnnClassifier.components.prepare_callbacks import PrepareCallback
+from cnnClassifier.components.training import Training
+from cnnClassifier.logging import logger
 
 
 STAGE_NAME = "Training"
@@ -27,7 +27,7 @@ class ModelTrainingPipeline:
 if __name__ == "__main__":
     try:
         logger.info(f"*********************")
-        logger.infof(f">>>>>> stage {STAGE_NAME} started <<<<<<<")
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<<")
         obj = ModelTrainingPipeline()
         obj.main()
         logger.info(f">>>>>>>>>> stage {STAGE_NAME} completed <<<<<<<\n\nx========x")

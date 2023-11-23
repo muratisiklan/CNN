@@ -1,6 +1,6 @@
-from src.cnnClassifier.config.configuration import ConfigurationManager
-from src.cnnClassifier.components.evaluation import Evaluation
-from src.cnnClassifier.logging import logger
+from cnnClassifier.config.configuration import ConfigurationManager
+from cnnClassifier.components.evaluation import Evaluation
+from cnnClassifier.logging import logger
 
 STAGE_NAME = "Evaluation"
 
@@ -20,7 +20,7 @@ class EvaluationPipeline:
 if __name__ == "__main__":
     try:
         logger.info(f"*********************")
-        logger.infof(f">>>>>> stage {STAGE_NAME} started <<<<<<<")
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<<")
         obj = EvaluationPipeline()
         obj.main()
         logger.info(

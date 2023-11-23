@@ -5,7 +5,7 @@ from typing import Union, Any
 import base64
 import os
 import yaml
-from src.cnnClassifier.logging import logger
+from cnnClassifier.logging import logger
 import json
 import dill
 # from ensure import ensure_annotations
